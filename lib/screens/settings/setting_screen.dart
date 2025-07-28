@@ -2,9 +2,9 @@ import 'package:cv_mobile_app/screens/about_me/about_me_screen.dart';
 import 'package:flutter/material.dart';
 
 class SettingScreen extends StatelessWidget {
-  SettingScreen({this.name = "Friend",this.color = Colors.white, super.key});
-  String? name;
-  Color? color;
+  const SettingScreen({this.name = "Friend",this.color = Colors.white, super.key});
+  final String? name;
+  final Color? color;
 
   @override
 
@@ -31,7 +31,7 @@ class SettingScreen extends StatelessWidget {
             debugPrint("About Me Clicked");
             Navigator.push(context, 
             MaterialPageRoute(
-              builder:  (context) => AboutMeScreen(
+              builder:  (context) => const AboutMeScreen(
                 age: 20,
               ),
               ),);

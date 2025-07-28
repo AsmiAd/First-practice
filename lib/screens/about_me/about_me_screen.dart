@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 class AboutMeScreen extends StatefulWidget {
-  AboutMeScreen({this.age = 23, super.key});
-  int? age;
+  const AboutMeScreen({this.age = 23, super.key});
+  final int? age;
 
   @override
   State<AboutMeScreen> createState() => _AboutMeScreenState();

@@ -56,9 +56,9 @@ class MainScreen extends StatelessWidget {
               Navigator.push(
                 context, 
                 MaterialPageRoute(
-                  builder: (context) => SettingScreen(
+                  builder: (context) => const SettingScreen(
                     name: "Asmi Adhikari",
-                    color: const Color.fromARGB(255, 245, 186, 252),
+                    color: Color.fromARGB(255, 245, 186, 252),
                   ),
               ),
               );
